@@ -1,8 +1,8 @@
-fun sayHello(itemToGreet:String) {
-    val msg = "Hello $itemToGreet"
-    println(msg)
-}
+fun sayHello(greeting:String, itemToGreet:String) = println("$greeting $itemToGreet")
 
 fun main() {
-    sayHello("World")
-} 
+    val interestingThings = arrayOf("Kotlin", "Programming", "Comic books")
+    println(interestingThings.size)
+    println(interestingThings[0])
+    println(interestingThings.get(0))
+}
