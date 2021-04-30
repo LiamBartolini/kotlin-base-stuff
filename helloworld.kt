@@ -3,8 +3,8 @@ fun sayHello(greeting:String, itemToGreet:String) = println("$greeting $itemToGr
 fun main() {
     val interestingThings = arrayOf("Kotlin", "Programming", "Comic books")
     println(interestingThings.size)
-
-    for (interestingThing in interestingThings) {
+    
+    interestingThings.forEach {interestingThing ->
         println(interestingThing)
     }
 }
