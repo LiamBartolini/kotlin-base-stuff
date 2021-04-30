@@ -1,11 +1,11 @@
-fun sayHello(greeting:String, itemToGreet:String) = println("$greeting $itemToGreet")
+// vararg = a variable number of arguments
+fun sayHello(greeting:String, vararg itemsToGreet:String) {
+    itemsToGreet.forEach { item ->
+        println("$greeting $item")
+    }
+}
 
 fun main() {
-    val interestingThings = mutableListOf("Kotlin", "Programming", "Comic books")
-    interestingThings.add("Dogs")
-    interestingThings.forEach { println(it) }
-
-    val map = mutableMapOf(1 to "a", 2 to "b", 3 to "c")
-    map.put(4, "d")
-    map.forEach { key, value -> println("$key -> $value") }
+    val interestingThings = arrayOf("Kotlin", "Programming", "Comic books")
+    sayHello("Hello", *interestingThings)
 }
