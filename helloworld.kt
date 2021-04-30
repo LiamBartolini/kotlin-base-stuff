@@ -2,9 +2,9 @@ val name = "Liam"
 var greeting: String? = null
 
 fun main() {
-    greeting = "Hello"
-    if (greeting != null) {
-        println(greeting)
+    when (greeting) {
+        null -> println("Hi")
+        else -> println(greeting)
     }
     println(name)
 }
