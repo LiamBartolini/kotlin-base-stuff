@@ -1,6 +1,10 @@
+
+
+val name: String = "Liam" // val are like "constant" Top level variable
+var greeting: String? = "Hello" // var can be reassigned
+// '?' -> nullable
+
 fun main() {
-    val nome : String = "Liam"
-    val cognome : String = "Bartolini"
-    println(nome)
-    println(cognome)
+    println(greeting)
+    println(name)
 }
