@@ -1,14 +1,8 @@
-fun getGreeting(): String {
-    return "Hello Kotlin"
-}
-
-// Unit -> same as saying 'this return nothing useful'
-// Or no return value, is the same thing
-fun sayHello(){
-    println(getGreeting())
+fun sayHello(itemToGreet:String) {
+    val msg = "Hello $itemToGreet"
+    println(msg)
 }
 
 fun main() {
-    println("Hello world")
-    sayHello()
-}
+    sayHello("World")
+} 
