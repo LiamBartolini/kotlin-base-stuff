@@ -1,13 +1,14 @@
-val name = "Liam"
-var greeting: String? = null
+fun getGreeting(): String {
+    return "Hello Kotlin"
+}
+
+// Unit -> same as saying 'this return nothing useful'
+// Or no return value, is the same thing
+fun sayHello(){
+    println(getGreeting())
+}
 
 fun main() {
-    greeting = "Hello"
-    val greetingToPrint = when (greeting) {
-        null -> "Hi"
-        else -> greeting
-    }
-
-    println(greetingToPrint)
-    println(name)
+    println("Hello world")
+    sayHello()
 }
